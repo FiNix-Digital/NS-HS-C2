@@ -230,20 +230,24 @@ form.contact-form {
 
 /* Navigation Styles */
 .custom-navbar {
-  background: #092254;
+  background: rgba(255, 255, 255, 0.9); /* Slight transparency for depth */
   backdrop-filter: blur(10px);
   padding: var(--spacing-sm) 0;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* subtle elevation */
 }
 
+/* Brand Logo */
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--white) !important;
+  color: var(--primary-color) !important;
+  font-family: var(--font-primary);
 }
 
+/* Navigation Links */
 .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: var(--dark-gray) !important;
   font-weight: 500;
   margin: 0 var(--spacing-xs);
   padding: var(--spacing-xs) var(--spacing-sm) !important;
@@ -251,11 +255,41 @@ form.contact-form {
   transition: all 0.3s ease;
 }
 
+/* Hover + Active Styles */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
   color: var(--white) !important;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--primary-color);
 }
+/* Change the hamburger color to orange */
+.navbar-toggler-icon {
+  background-image: none; /* remove Bootstrap's default icon */
+  width: 22px;
+  height: 2px;
+  background-color: var(--accent-color);
+  position: relative;
+  display: inline-block;
+}
+
+/* Add the top and bottom bars */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.navbar-toggler-icon::before {
+  top: -6px;
+}
+
+.navbar-toggler-icon::after {
+  top: 6px;
+}
+
+
 
 /* Hero Section */
 .hero-section {
