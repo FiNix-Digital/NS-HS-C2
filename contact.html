@@ -172,69 +172,69 @@
               </p>
 
              <form name="submit-to-google-sheet" class="contact-form" id="contactForm">
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="firstName" class="form-label">First Name *</label>
-                  <input type="text" class="form-control" id="firstName" name="FirstName" placeholder=" " required />
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="lastName" class="form-label">Last Name *</label>
-                  <input type="text" class="form-control" id="lastName" name="LastName" required />
-                </div>
-              </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="firstName" class="form-label">First Name *</label>
+      <input type="text" class="form-control" id="firstName" name="FirstName" placeholder=" " required />
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="lastName" class="form-label">Last Name *</label>
+      <input type="text" class="form-control" id="lastName" name="LastName" required />
+    </div>
+  </div>
 
-              <div class="mb-3">
-                <label for="email" class="form-label">Email Address *</label>
-                <input type="email" class="form-control" id="email" name="Email" required />
-              </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email Address *</label>
+    <input type="email" class="form-control" id="email" name="Email" required />
+  </div>
 
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="courseInterested" class="form-label">Course Interested *</label>
-                  <select class="form-select" id="courseInterested" name="CourseInterested" required>
-                    <option value="">Select Course</option>
-                    <option value="iit-jee">AP ECET Coaching</option>
-                    <option value="neet">Polytechnic Coaching</option>
-                    <option value="eamcet">Diploma Tuitions</option>
-                    <option value="foundation">Technical Courses</option>
-                    <option value="apeapcet">AP EAPCET</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="currentClass" class="form-label">Current Class/Status</label>
-                  <select class="form-select" id="currentClass" name="CurrentClass">
-                    <option value="">Select Class</option>
-                    <option value="10th">10th Class</option>
-                    <option value="11th">11th Class</option>
-                    <option value="12th">12th Class</option>
-                    <option value="12th-pass">12th Passed</option>
-                    <option value="dropper">Dropper</option>
-                    <option value="parent">Parent Inquiry</option>
-                  </select>
-                </div>
-              </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="courseInterested" class="form-label">Course Interested *</label>
+      <select class="form-select" id="courseInterested" name="CourseInterested" required>
+        <option value="">Select Course</option>
+        <option value="AP ECET Coaching">AP ECET Coaching</option>
+        <option value="Polytechnic Coaching">Polytechnic Coaching</option>
+        <option value="Diploma Tuitions">Diploma Tuitions</option>
+        <option value="Technical Courses">Technical Courses</option>
+        <option value="AP EAPCET">AP EAPCET</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
 
-              <div class="mb-3">
-                <label for="message" class="form-label">Message *</label>
-                <textarea class="form-control" id="message" name="Message" rows="5"
-                  placeholder="Tell us about your goals, questions, or any specific requirements..."
-                  required></textarea>
-              </div>
+    <div class="col-md-6 mb-3">
+      <label for="currentClass" class="form-label">Current Class/Status</label>
+      <select class="form-select" id="currentClass" name="CurrentClass">
+        <option value="">Select Class</option>
+        <option value="10th">10th Class</option>
+        <option value="11th">11th Class</option>
+        <option value="12th">12th Class</option>
+        <option value="12th Passed">12th Passed</option>
+        <option value="Dropper">Dropper</option>
+        <option value="Parent Inquiry">Parent Inquiry</option>
+      </select>
+    </div>
+  </div>
 
-              <div class="mb-3">
-                <label for="phone" class="form-label">Phone Number *</label>
-                <input type="tel" class="form-control" id="phone" name="Phone" required />
-              </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Message *</label>
+    <textarea class="form-control" id="message" name="Message" rows="5"
+      placeholder="Tell us about your goals, questions, or any specific requirements..."
+      required></textarea>
+  </div>
 
-              <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                <button type="submit" class="btn btn-primary btn-lg me-md-2">
-                  <i class="fas fa-paper-plane me-2"></i>Submit
-                </button>
-              </div>
-              <span id="msg" class="mt-2 text-success text-center d-block"></span>
-            </form>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone Number *</label>
+    <input type="tel" class="form-control" id="phone" name="Phone" required />
+  </div>
 
+  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <button type="submit" class="btn btn-primary btn-lg me-md-2">
+      <i class="fas fa-paper-plane me-2"></i>Submit
+    </button>
+  </div>
+  <span id="msg" class="mt-2 text-success text-center d-block"></span>
+</form>
             </div>
           </div>
 
@@ -485,24 +485,24 @@
     </a>
 
     <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwHHSt0FcSe0ssdVVSfTdqyXWrvAuK7CZTRtF5kDkHibQBVAMr2ydek1-znEjsXXqdt/exec'; // Replace with your Google Script URL
-    const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById('msg');
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwHHSt0FcSe0ssdVVSfTdqyXWrvAuK7CZTRtF5kDkHibQBVAMr2ydek1-znEjsXXqdt/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById('msg');
 
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          msg.innerHTML = "Form submitted successfully!";
-          setTimeout(() => msg.innerHTML = "", 5000);
-          form.reset();
-        })
-        .catch(error => {
-          console.error('Error!', error.message);
-          msg.innerHTML = "Something went wrong. Please try again later.";
-        });
-    });
-  </script>
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Form submitted successfully!";
+        setTimeout(() => msg.innerHTML = "", 5000);
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        msg.innerHTML = "Something went wrong. Please try again later.";
+      });
+  });
+</script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
