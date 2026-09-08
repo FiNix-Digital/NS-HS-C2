@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nshsacademy.in/sitemap.xml
+
+Sitemap: https://nshsacademy.co.in/sitemap.xml
